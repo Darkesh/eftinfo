@@ -5,13 +5,45 @@
   <meta charset="utf-8">
   <title>Contactos</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Imgs\logo_transparent.png" />
 
 
   <style>
+  body{
+    margin: 0;
+  }
     body,
     input,
     textarea {
       font-family: 'Nunito', sans-serif;
+    }
+
+    /* --------------TOPNAV-------------- */
+    .topnavbar {
+      overflow: hidden;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      box-shadow: 0px 0.5px 5px black;
+    }
+
+    .topnavbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 1% 1%;
+      text-decoration: none;
+      font-size: 2vh;
+    }
+
+    .topnavbar a:hover {
+      color: #ddd;
+    }
+
+    .topnavbar a.active {
+      background-color: white;
+      color: black;
+      font-weight: bold;
     }
 
     /* --------------CAIXA-------------- */
@@ -19,7 +51,7 @@
       margin: 2% auto;
       width: 60%;
       border-radius: 5px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19);
       padding: 1% 1%;
       border: 1px solid #ccc;
     }
@@ -44,13 +76,22 @@
       border-radius: 4px;
       box-sizing: border-box;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-      font-size: 1.5vh;
+      font-size: 1.7vh;
     }
   </style>
 
 </head>
 
 <body>
+
+  <!-- TOPNAV -->
+  <div class="topnavbar">
+    <a href="Index.html"><img src="Imgs\logo_transparent.png" style="width: 9vh; float: left"></a>
+    <a href="Index.html" style="margin-top: 1.5%;">Início</a>
+    <a href="Reservas.html" style="margin-top: 1.5%;">Reservas</a>
+    <a href="Galeria.html" style="margin-top: 1.5%;">Galeria</a>
+    <a class="active" href="Contactos.html" style="margin-top: 1.5%">Contactos</a>
+  </div>
 
   <!-- CAIXA -->
   <div class="caixa">

@@ -11,25 +11,28 @@
 </head>
 
 <style>
-  --- TOP NAVBAR ---
+  --- TOP NAVBAR --- * {
+    font-family: 'Nunito', sans-serif;
+  }
+
   body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
   }
 
   .topnav {
     overflow: hidden;
     background-color: white;
     box-shadow: 0px 0.5px 5px black;
+    width: 100%;
   }
 
   .topnav a {
     float: left;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1% 1%;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2vh;
   }
 
   .topnav a:hover {
@@ -58,14 +61,12 @@
     padding: 0
   }
 
-  --- Titulo 2 ---
-  .titulo2 {
+  --- Titulo 2 --- .titulo2 {
     text-align: center !important;
     font-weight: bold !important;
   }
 
-  --- GALERIA ---
-  div.gallery {
+  --- GALERIA --- div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -81,11 +82,21 @@
     padding: 15px;
     text-align: center;
   }
+
+  --- FOOTER --- .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
 </style>
 
 <body>
 
-  <div class="topnav">
+  <div class="topnav" style="font-family: 'Nunito', sans-serif;">
     <a href="Index.html"><img src="Imgs\logo_transparent.png" style="width: 85px; height: 85px; float: left"></a>
     <a class="active" href="Index.html" style="margin-top: 1.5%;">Início</a>
     <a href="Reservas.html" style="margin-top: 1.5%;">Reservas</a>
@@ -106,26 +117,25 @@
     </div>
   </div>
 
-  <div style="text-align:center; margin-top: 5%;">
-    <h3 style="font-weight: bold">VERIFIQUE OS NOSSOS QUARTOS CONFORTÁVEIS</h3>
+  <div style="font-family: 'Nunito', sans-serif; text-align:center; margin-top: 5%;">
+    <h3 style="font-family: 'Nunito', sans-serif; font-weight: bold">VERIFIQUE OS NOSSOS QUARTOS CONFORTÁVEIS</h3>
     <p>
       Passe o rato sobre uma das imagens abaixo e, em seguida, clique no ícone do calendário para verificar disponibilidade de quartos ou ícone de lupa para saber mais sobre este quarto
     </p>
   </div>
 
   <div style="width: 60%; margin: auto; display: flex; margin-top: 2%;">
-
     <div class="gallery" style="float: left;  width: 60%;">
       <a target="_blank" href="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg">
         <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg" alt="Cinque Terre" width="600" height="400">
       </a>
       <div class="desc">
-        <h4 style="font-weight: bold">DORMITÓRIO MISTO 6</h4>
+        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold">DORMITÓRIO MISTO 6</h4>
         <hr />
-        <p style="text-align: center">
-          CamasS: 6
+        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+          Camas: 6
         </p>
-        <p style="text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center">
           Nº Máximo de Pessoas: 6
         </p>
       </div>
@@ -136,12 +146,12 @@
         <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg" alt="Forest" width="600" height="400">
       </a>
       <div class="desc">
-        <h4 style="font-weight: bold">DORMITÓRIO MISTO 7</h4>
+        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold">DORMITÓRIO MISTO 7</h4>
         <hr />
-        <p style="text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center">
           Camas: 7
         </p>
-        <p style="text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center">
           Nº Máximo de Pessoas: 7
         </p>
       </div>
@@ -152,18 +162,32 @@
         <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Family-Room-e1464548909814.jpg" alt="Northern Lights" width="600" height="400">
       </a>
       <div class="desc">
-        <h4 style="font-weight: bold">QUARTO FAMILIAR</h4>
+        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold">QUARTO FAMILIAR</h4>
         <hr />
-        <p style="text-align: center">
+        <p style="font-family: 'Nunito', sans-serif;text-align: center">
           Camas: 3
         </p>
-        <p style="text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center">
           Nº Máximo de Pessoas: 4
         </p>
       </div>
     </div>
-
   </div>
+
+  <!-- FOOTER -->
+
+  <footer style="font-family: 'Nunito', sans-serif; padding-bottom: 1px; width: 100%; background-color: black; color: white; text-align: center;">
+    <br />
+    <p style="font-size: 1.6vh; border-top: 1px dotted white; width: 80%; margin: auto;">
+      <br />
+      Website realizado por Henrique Alves, João Espada e Telmo Reis.
+    </p>
+    <p style="font-size: 1.6vh;">
+      Copyright © 2020. All right reserved.
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
 
   <script>
     var slideIndex = 1;

@@ -2,22 +2,74 @@
 <html lang="pt" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imgs\logo_transparent.png" />
     <title>Galeria</title>
 
     <style media="screen">
       .tabela{
         margin: auto;
 	}
-	
+
 	.flex-container {
 		display: flex;
 		margin: 10px;
 		padding: 20px;
 		font-size: 30px;
 	}
+
+    body {
+      margin: 0;
+    }
+
+    body,
+    input,
+    textarea,
+    button {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* --------------TOPNAV-------------- */
+    .topnavbar {
+      overflow: hidden;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0px 0.5px 5px black;
+    }
+
+    .topnavbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 1% 1%;
+      text-decoration: none;
+      font-size: 2vh;
+    }
+
+    .topnavbar a:hover {
+      color: #ddd;
+    }
+
+    .topnavbar a.active {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+    }
     </style>
   </head>
   <body>
+
+    <!-- TOPNAV -->
+    <div class="topnavbar">
+      <a href="Index.html"><img src="Imgs\logo_transparent.png" style="width: 9vh; float: left"></a>
+      <a href="Index.html" style="margin-top: 1.5%;">Início</a>
+      <a href="Reservas.html" style="margin-top: 1.5%;">Reservas</a>
+      <a class="active" href="Galeria.html" style="margin-top: 1.5%;">Galeria</a>
+      <a href="Contactos.html" style="margin-top: 1.5%">Contactos</a>
+    </div>
+
+    <!-- GALERIA -->
+
     <table class="tabela">
       <tr class="flex-container">
         <td> <img src="https://cdn.pixabay.com/photo/2015/12/05/23/41/bathtub-1078929__340.jpg"  width=350 height=250> <p>Casa de banho</p> </td>
@@ -35,5 +87,19 @@
         <td> <img src="https://www.casasnogeresparaalugar.pt/wp-content/uploads/2017/04/alugar-casa-luxo-geres-louredo-tenis.jpg" width=350 height=250> <p>Atividades</p> </td>
       </tr>
     </table>
+
+    <!-- FOOTER -->
+
+    <footer style="font-family: 'Nunito', sans-serif; padding-bottom: 1px; width: 100%; background-color: black; color: white; text-align: center;">
+      <br />
+      <p style="font-size: 1.6vh; border-top: 1px dotted white; width: 80%; margin: auto;">
+        <br />
+        Website realizado por Henrique Alves, João Espada e Telmo Reis.
+      </p>
+      <p style="font-size: 1.6vh;">
+        Copyright © 2020. All rights reserved.
+      </p>
+    </footer>
+
   </body>
 </html>

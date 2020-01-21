@@ -82,7 +82,9 @@
     text-align: center;
   }
 
-  --- FOOTER --- .footer {
+  --- FOOTER ---
+
+  .footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -91,6 +93,15 @@
     color: white;
     text-align: center;
   }
+
+  --- ABOUT ---
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2196F3;
+  }
+
 </style>
 
 <body>
@@ -139,10 +150,10 @@
       <div class="desc">
         <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh">DORMITÓRIO MISTO 6</h4>
         <hr />
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Camas: 6
         </p>
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Nº Máximo de Pessoas: 6
         </p>
       </div>
@@ -155,10 +166,10 @@
       <div class="desc">
         <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh">DORMITÓRIO MISTO 7</h4>
         <hr />
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Camas: 7
         </p>
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Nº Máximo de Pessoas: 7
         </p>
       </div>
@@ -171,10 +182,10 @@
       <div class="desc">
         <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh">QUARTO FAMILIAR</h4>
         <hr />
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Camas: 3
         </p>
-        <p style="font-family: 'Nunito', sans-serif; text-align: center">
+        <p style="font-family: 'Nunito', sans-serif; text-align: center; font-size: 1.7vh">
           Nº Máximo de Pessoas: 4
         </p>
       </div>
@@ -199,18 +210,26 @@
 
   <!-- SERVICES -->
 
-  <div style="background-color: white;">
-    <div style="text-align: left; padding-top: 2%; padding-bottom: 4%; padding-left: 20%; padding-right: 20%;">
+  <div style="background-color: white;" class="grid-container">
+
+  <!-- LEFT -->
+
+    <div style="margin-top: 2%; margin-bottom: 4%; width: 100%; padding-left: 20%; padding-right: 20%; display: inline-block;">
       <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold">SERVIÇOS</h4>
-      <div style="overflow: auto">
+      <div>
         <a style="font-family: 'Nunito', sans-serif;">
           Uma cozinha sempre preparada para o uso dos convidados<br /><br />
           Uso gratuito de internet<br /><br />
           Sala principal com vários tipos de jogos para consola (PS3, Wii, etc.)<br /><br />
           Venda de bebidas<br /><br />
           Cofres individuais
-      </a>
+        </a>
       </div>
+      <div style="margin-top: 7%">
+        <img style="width: 13%; margin-right: 5%" src="Imgs\review-red.jpeg" />
+        <img style="width: 18.4%" src="Imgs\review-blue.png"/>
+      </div>
+    </div>
   </div>
 
   <!-- FOOTER -->

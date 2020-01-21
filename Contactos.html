@@ -9,12 +9,14 @@
 
 
   <style>
-  body{
-    margin: 0;
-  }
+    body {
+      margin: 0;
+    }
+
     body,
     input,
-    textarea {
+    textarea,
+    button {
       font-family: 'Nunito', sans-serif;
     }
 
@@ -81,6 +83,38 @@
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
       font-size: 1.7vh;
     }
+
+    .button {
+      background-color: #EA9215;
+      border: none;
+      color: white;
+      padding: 2% 7%;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 2vh;
+      margin: auto;
+      cursor: pointer;
+      border-radius: 4px;
+      position: relative;
+
+    }
+    .button:hover {
+      background-color: #d18112;
+      border: none;
+      color: white;
+      padding: 2% 7%;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 2vh;
+      margin: auto;
+      cursor: pointer;
+      border-radius: 4px;
+      position: relative;
+
+    }
+
   </style>
 
 </head>
@@ -124,7 +158,31 @@
       <textarea name="Mensagem" rows="8" placeholder="Mensagem..." style="resize: none;"></textarea>
     </p>
 
+    <button class="button">Enviar</button>
+
   </div>
+
+
+  <br />
+
+  <!-- Map -->
+
+  <div id="googleMap" style="width:62%;height:400px; margin:auto; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19); border: 1px solid #ccc;"></div>
+
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXt1zIrCPVLZ1RX40YrC72yxLT49aDU_w&callback=myMap"></script>
+
+  <br />
+  <br />
 
   <!-- FOOTER -->
 
@@ -139,19 +197,7 @@
     </p>
   </footer>
 
-  <!--<div id="googleMap" style="width:100%;height:400px;"></div>
 
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXt1zIrCPVLZ1RX40YrC72yxLT49aDU_w&callback=myMap"></script>-->
 
 </body>
 

@@ -19,6 +19,8 @@
       font-family: 'Nunito', sans-serif;
     }
 
+
+
     /* --------------TOPNAV-------------- */
     .topnavbar {
       overflow: hidden;
@@ -46,33 +48,44 @@
       font-weight: bold;
     }
 
+    .pagetitle{
+      width: 100%;
+      background-color:#ede8e8;
+      margin: auto;
+      text-align: center;
+      font-size: 4vh;
+      padding: 3% 0;
+      font-weight: bold;
+      box-shadow: 0px 0.5px 3px black;
+    }
+
     /*-- GALERIA TAB ---*/
 
-    .tabela {
+    .table {
       margin: auto;
-      padding-right: 8%;
-    }
-
-    .flex-container {
-      display: flex;
-      margin: 1%;
-      padding: 2%;
-    }
-
-    p {
+      width: 80%;
       text-align: center;
-      font-size: 2vh;
-      font-weight: bold;
     }
 
-    .imgmid {
-      margin-left: 5%;
-      margin-right: 5%;
+    .img {
+      margin: auto;
+      display: block;
+      width: 85%;
+    }
+
+    .descricao1 {
+      font-weight: bold;
+      font-size: 2vh;
+    }
+
+    .descricao2 {
+      font-size: 1.7vh;
     }
   </style>
 </head>
 
 <body>
+
 
   <!-- TOPNAV -->
   <div class="topnavbar">
@@ -86,43 +99,87 @@
     <a href="Galeria.html" style="float: right; margin-top: 1.1%;"><img src="https://image.flaticon.com/icons/svg/197/197463.svg" style="width: 4vh;"></a>
   </div>
 
+  <div class="pagetitle">
+
+GALERIA
+
+  </div>
+
+  <br />
+  <br />
+
   <!-- GALERIA -->
 
-  <table class="tabela">
-    <tr class="flex-container">
-      <td> <img src="https://cdn.pixabay.com/photo/2015/12/05/23/41/bathtub-1078929__340.jpg" width=345 height=230>
-        <p>CASA DE BANHO</p>
-      </td>
-      <td class="imgmid"> <img src="https://cdn.pixabay.com/photo/2014/05/17/18/03/lobby-346426__340.jpg" width=345 height=230>
-        <p>ENTRADA</p>
-      </td>
-      <td> <img src="https://www.nautilus.ind.br/blog/wp-content/uploads/2016/03/Cascata-de-piscina-em-luxuosa-arquitetura-reprodu%C3%A7%C3%A3o.jpg" width=345 height=230>
-        <p>PISCINA</p>
-      </td>
+  <table class="table">
+    <tr>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Toilets-e1464548928535.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Lobby-view-e1464549038536.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Detail1-e1464548994308.jpg" />
+      </th>
     </tr>
-    <tr class="flex-container">
-      <td> <img src="https://s2.glbimg.com/w2Hi2MHGp71Ny8WtYc140_mHRiQ=/620x650/e.glbimg.com/og/ed/f/original/2019/03/13/restaurante-ludmilla.jpg" width=345 height=230>
-        <p>RESTAURANTE</p>
+
+    <tr class="descricao1">
+      <td>WC FEMININO
       </td>
-      <td class="imgmid"> <img src="Imgs\quarto.jpg" width=345 height=230>
-        <p>QUARTOS</p>
+      <td>ENTRADA
       </td>
-      <td> <img src="https://q-fa.bstatic.com/xdata/images/hotel/max1024x768/106794369.jpg?k=635e46b91f1687fdf0df78af8fc6e0d725c81266ee52472c25d665f1672f5447&o=" width=345 height=230>
-        <p>QUARTOS DUPLOS</p>
-      </td>
-    </tr>
-    <tr class="flex-container">
-      <td> <img src="Imgs\quartovip.jpg" width=345 height=230>
-        <p>QUARTOS VIP</p>
-      </td>
-      <td class="imgmid"> <img src="https://cdn.record.pt/images/2017-03/img_920x519$2017_03_13_22_10_50_1237015.jpg" width=345 height=230>
-        <p>GINÁSIO</p>
-      </td>
-      <td> <img src="https://www.casasnogeresparaalugar.pt/wp-content/uploads/2017/04/alugar-casa-luxo-geres-louredo-tenis.jpg" width=345 height=230>
-        <p>ATIVIDADES</p>
+      <td>DETALHE
       </td>
     </tr>
   </table>
+
+<br />
+<br />
+
+  <table class="table">
+    <tr>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Smokers-Balcony-e1464549022296.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Family-Room-e1464548909814.jpg" />
+      </th>
+    </tr>
+
+    <tr class="descricao1">
+      <td>VARANDA PARA FUMADORES
+      </td>
+      <td>DORMITORIO FEMININO
+      </td>
+      <td>QUARTO FAMILIAR
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <br />
+
+  <table class="table">
+    <tr>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Double-with-Private-Bathroom-e1464548915206.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Lobby-view-e1464549038536.jpg" />
+      </th>
+      <th><img class="img" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Detail1-e1464548994308.jpg" />
+      </th>
+    </tr>
+
+    <tr class="descricao1">
+      <td>DUPLO COM WC PRIVADO
+      </td>
+      <td>JOGOS E TV
+      </td>
+      <td>COZINHA
+      </td>
+    </tr>
+  </table>
+
+  <br />
+  <br />
+
+
 
   <!-- FOOTER -->
 

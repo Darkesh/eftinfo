@@ -49,9 +49,9 @@
     /* Position the image container (needed to position the left and right arrows) */
     .container {
       position: relative;
-      margin-left: 5%;
+      margin-left: 10%;
       float: left;
-      width: 50%;
+      width: 35%;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -84,7 +84,7 @@
 
     /* Position the "next button" to the right */
     .next {
-      right: 46.7%;
+      right: 0%;
       border-radius: 3px 0 0 3px;
     }
 
@@ -130,6 +130,44 @@
       display: inline-block;
       padding-left: 5%;
     }
+
+    p {
+      font-size: 1.7vh;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #c4c4c4;
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 3vh;
+    }
+
+    a {
+      font-size: 1.8vh;
+      color: #D18112;
+    }
+
+    .divbooking {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    .imgbooking {
+      width: 60%;
+      height: 600px;
+    }
+
+    .insidebooking {
+      margin: auto;
+      text-align: center;
+      background-color: #EAEAEA;
+      width: 50%;
+    }
+
   </style>
 
 </head>
@@ -157,22 +195,22 @@
     <!-- Full-width images with number text -->
     <div class="mySlides">
       <div class="numbertext">1 / 6</div>
-      <img src="Imgs\CasaDeBanho1.png" style="width:100%">
+      <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 6</div>
-      <img src="Imgs\CasaDeBanho2.png" style="width:100%">
+      <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 6</div>
-      <img src="Imgs\CasaDeBanho3.png" style="width:100%">
+      <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">4 / 6</div>
-      <img src="Imgs\CasaDeBanho4.png" style="width:100%">
+      <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%">
     </div>
 
 
@@ -183,25 +221,50 @@
     <!-- Thumbnail images -->
     <div class="row" style="width: 150.1%;">
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        <img class="demo cursor" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        <img class="demo cursor" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        <img class="demo cursor" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        <img class="demo cursor" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-1024x683.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
       </div>
 
     </div>
   </div>
 
   <div class="caracteristicas">
-    aaaa
+    <h4>DORMITÓRIO MISTO 6</h4>
+    <hr />
+    <p>Nº Máximo de Pessoas: 6, Camas: 6</p>
+    <hr />
   </div>
 
+  <div style="margin-left: 50%; margin-bottom: 21%; width: 15.5%; font-weight: bold;">
+    <a>RESERVA</a>
+    <hr />
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer style="font-family: 'Nunito', sans-serif; padding-bottom: 1px; width: 100%; background-color: black; color: white; text-align: center;">
+    <br />
+    <p style="font-size: 1.6vh; border-top: 1px dotted white; width: 80%; margin: auto;">
+      <br />
+      Avenida Jorge Peixinho, n.º 30 — Quinta da Arreinela 2805-059 ALMADA
+      <br />
+      TEL 777 777 777 | FAX 777 777 777 | EMAIL hotelima@gmail.com
+      <br />
+      <br />
+      Website realizado por Henrique Alves, João Espada e Telmo Reis.
+    </p>
+    <p style="font-size: 1.6vh;">
+      Copyright © 2020. All rights reserved.
+    </p>
+  </footer>
 
   <!-- Scripts -->
   <script>

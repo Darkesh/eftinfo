@@ -55,22 +55,6 @@
 
   /*--- SLIDER ---*/
 
-  /*.mySlides {
-    display: none
-  }
-
-  .w3-left,
-  .w3-right,
-  .w3-badge {
-    cursor: pointer
-  }
-
-  .w3-badge {
-    height: 13px;
-    width: 13px;
-    padding: 0
-  }*/
-
   * {box-sizing: border-box;}
   body {font-family: Verdana, sans-serif;}
   .mySlides {display: none;}
@@ -93,7 +77,7 @@
     bottom: 8px;
     width: 100%;
     text-align: center;
-    margin-bottom: 50%;
+    margin-bottom: 43%;
     font-weight: bold;
   }
 
@@ -105,7 +89,19 @@
     bottom: 8px;
     width: 100%;
     text-align: center;
-    margin-bottom: 45%;
+    margin-bottom: 40%;
+  }
+
+  .logotxt {
+    color: #EA9215;
+    font-size: 8vh;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50%;
+    font-weight: bold;
   }
 
   /* The dots/bullets/indicators */
@@ -146,28 +142,6 @@
     .text {font-size: 11px}
   }
 
-  /*--- PARALLAX ---*/
-
-  .parallax {
-  /* The image used */
-  background-image: url('img_parallax.jpg');
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-
-  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-  @media only screen and (max-device-width: 1366px) {
-      .parallax {
-        background-attachment: scroll;
-      }
-  }
   /*--- Titulo 2 ---*/
 
   .titulo2 {
@@ -194,15 +168,42 @@
     text-align: center;
   }
 
-  /*--- HOVER MAGNIFIER ---*/
-
-
   /*--- ABOUT ---*/
 
   .grid-container {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: auto auto;
-    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-item {
+  padding: 20px;
+  }
+
+  .item1 {
+    padding-left: 40%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    padding-left: 15%;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .item3 {
+    padding-left: 40%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item4 {
+    padding-left: 15%;
+    padding-right: 40%;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   /*--- FOOTER ---*/
@@ -235,35 +236,25 @@
 
   <!-- SLIDER -->
 
-  <!--<div class="w3-content w3-display-container" style="max-width: 100%; margin-top: 0.1%;">
-    <img class="mySlides" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Lobby-view-2.jpg" style="width:100%; height: 780px">
-    <img class="mySlides" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Reception-1.jpg" style="width:100%; height: 780px">
-    <img class="mySlides" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Balcony-1.jpg" style="width:100%; height: 780px">
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-  </div>*/-->
-
   <div class="slideshow-container">
 
   <div class="mySlides fade">
     <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Lobby-view-2.jpg" style="width:100%; filter: brightness(50%);">
+    <div class="logotxt"><img style="width: 10%" src="Imgs\logo_transparent.png"/></div>
     <div class="text">Hotelima</div>
     <div class="text2">O hotel que oferece melhor <span style="color: #EA9215">conforto</span></div>
   </div>
 
   <div class="mySlides fade">
     <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Reception-1.jpg" style="width:100%; filter: brightness(50%);">
+    <div class="logotxt"><img style="width: 10%" src="Imgs\logo_transparent.png"/></div>
     <div class="text">Hotelima</div>
     <div class="text2">O hotel que oferece melhor <span style="color: #EA9215">preço</span></div>
   </div>
 
   <div class="mySlides fade">
     <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Balcony-1.jpg" style="width:100%; filter: brightness(35%);">
+    <div class="logotxt"><img style="width: 10%" src="Imgs\logo_transparent.png"/></div>
     <div class="text">Hotelima</div>
     <div class="text2">O hotel que oferece melhor <span style="color: #EA9215;">qualidade</span></div>
   </div>
@@ -292,7 +283,7 @@
 
   <div style="width: 60%; margin: auto; display: flex; margin-top: 2%; background: white">
     <div class="gallery" style="float: left;  width: 60%;">
-      <a target="_blank" href="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg">
+      <a href="DormMisto6.html">
         <img class="image" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg">
       </a>
       <div class="desc">
@@ -308,7 +299,7 @@
     </div>
 
     <div class="gallery" style="margin-left: 50px; margin-right: 50px; float: left;  width: 60%;">
-      <a target="_blank" href="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg">
+      <a href="DormMisto7.html">
         <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Female-Dorm-1-e1464548898849.jpg">
       </a>
       <div class="desc">
@@ -324,7 +315,7 @@
     </div>
 
     <div class="gallery" style="float: left;  width: 60%;">
-      <a target="_blank" href="https://belisbonhostel.pt/wp-content/uploads/2016/05/Family-Room-e1464548909814.jpg">
+      <a href="QuartoFam.html">
         <img src="https://belisbonhostel.pt/wp-content/uploads/2016/05/Family-Room-e1464548909814.jpg">
       </a>
       <div class="desc">
@@ -345,13 +336,12 @@
   <div style="background-color: #F1F1F1;">
     <div style="text-align: left; padding-top: 2%; padding-bottom: 4%; padding-left: 20%; padding-right: 20%; margin-top: 2%;">
       <div>
-        <img src="https://image.flaticon.com/icons/svg/2228/2228613.svg" style="width: 2%; float: left; margin-right: 1%;" />
-        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh">ACERCA DO NOSSO HOTEL</h4>
+        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh"> <img src="https://image.flaticon.com/icons/svg/2228/2228613.svg" style="width: 2%; float: left; margin-right: 1%;" /> ACERCA DO NOSSO HOTEL</h4>
       </div>
       <div style="overflow: auto">
         <img style="float: left; width: 20%; margin-right: 5%;" src="https://belisbonhostel.pt/wp-content/uploads/2016/05/cropped-Reception.jpg" />
         <a style="font-family: 'Nunito', sans-serif;">
-          O Hotelima é localizado no centro de Lisboa e oferece uma atmosfera relaxada, com uma equipa de staff sempre disponível a ajudar durante a sua estadia.<br /><br />
+          O Hotelima é localizado no centro de Almada e oferece uma atmosfera relaxada, com uma equipa de staff sempre disponível a ajudar durante a sua estadia.<br /><br />
           Todos os dormitórios e quartos têm fechaduras eletrónicas, luz privada, e ainda incluem acesso à casa de banho (Homem e mulher - separado).<br /><br />
           O Hotelima oferece Wi-Fi gratuito, disponível por todo o hotel, cozinha, centro de negócios com impressora e ainda uma sala com vídeo-jogos e TV.<br /><br />
           Temos um horário de receção de <span style="font-weight: bold">24 horas</span> por dia.
@@ -361,14 +351,14 @@
 
     <!-- SERVICES -->
 
-    <div style="background-color: white;" class="grid-container">
+    <div class="grid-container" style="background-color: white;">
 
       <!-- LEFT -->
 
-      <div style="margin-top: 2%; margin-bottom: 4%; width: 100%; padding-left: 20%; padding-right: 20%; display: inline-block;">
+      <!-- TOP LEFT -->
+      <div class="grid-item item1" style="margin-top: 2%; margin-bottom: 4%; width: 100%;">
         <div>
-          <img src="https://image.flaticon.com/icons/svg/33/33738.svg" style="width: 2%; float: left; margin-right: 1%;" />
-          <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh">SERVIÇOS</h4>
+          <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh"> <img src="https://image.flaticon.com/icons/svg/33/33738.svg" style="width: 4%" /> SERVIÇOS</h4>
         </div>
         <div>
           <a style="font-family: 'Nunito', sans-serif;">
@@ -379,12 +369,33 @@
             Cofres individuais
           </a>
         </div>
-        <div style="margin-top: 7%">
-          <img style="width: 13%; margin-right: 5%" src="Imgs\review-red.jpeg" />
-          <img style="width: 18.4%" src="Imgs\review-blue.png" />
-        </div>
       </div>
+
+      <!-- BOTTOM LEFT -->
+      <div class="grid-item item3">
+        <img style="width: 28.2%; margin-right: 5%" src="Imgs\review-red.jpeg" />
+        <img style="width: 40.08%" src="Imgs\review-blue.png" />
+      </div>
+
+      <!-- RIGHT -->
+
+      <!-- TOP RIGHT -->
+      <div class="grid-item item2" style="margin-top: 2%; margin-bottom: 4%; width: 100%;">
+        <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 2vh"> <img src="https://image.flaticon.com/icons/svg/1383/1383676.svg" style="width: 3%" /> ENCONTRE-NOS EM:</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.2515325892723!2d-9.180656684656475!3d38.66608697960711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935264c5aac67%3A0xc0fcc83c9716419f!2sPiaget%20Institute%20of%20Almada!5e0!3m2!1sen!2spt!4v1579705980039!5m2!1sen!2spt" width="50%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+
+      <!-- BOTTOM RIGHT -->
+      <div class="grid-item item4">
+        <a style="font-family: 'Nunito', sans-serif;">
+          <h4 style="font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 1.8vh"> <img src="https://image.flaticon.com/icons/svg/447/447031.svg" style="width: 4%" /> HOTELIMA</h4>
+          O Hotelima está localizado na zona do Pragal, em Almada. Situado a 5 minutos a pé da estação de comboios e demora do aeroporto para a nossa zona apenas 20 minutos.<br />
+          Avenida Jorge Peixinho, n.º 30 — Quinta da Arreinela 2805-059 ALMADA
+        </a>
+      </div>
+
     </div>
+
   </div>
 </div>
     <!-- FOOTER -->
@@ -408,36 +419,6 @@
     <!-- JAVASCRIPT -->
 
     <script>
-      /*var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-white";
-      }*/
 
       <!-- AUTO SLIDESHOW -->
 
@@ -458,7 +439,7 @@
         }
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3000); // Change image every 5 seconds
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
       }
 
     </script>

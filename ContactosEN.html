@@ -185,16 +185,23 @@
       <textarea name="Mensagem" rows="8" placeholder="Message..." style="resize: none;"></textarea>
     </p>
 
-    <button class="button">Submit</button>
+    <button id="botao" onclick="popup()" class="button">Submit</button>
 
   </div>
 
+  <script>
+  function popup() {
+    alert("Message successfully sent!");
+  }
+</script>
 
   <br />
 
   <!-- Map -->
 
-  <div id="googleMap" style="width:62%;height:400px; margin:auto; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19); border: 1px solid #ccc;"></div>
+<iframe style="width:62%;height: 45vh; display: block; margin:auto; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19); border: 1px solid #ccc;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.2515325892723!2d-9.180656684656475!3d38.66608697960711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935264c5aac67%3A0xc0fcc83c9716419f!2sInstituto%20Piaget%20de%20Almada!5e0!3m2!1sen-EN!2sen!4v1579786788689!5m2!1sen-en!2sen" frameborder="0"></iframe>
+
+  <!--<div id="googleMap" style="width:62%;height:400px; margin:auto; box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19); border: 1px solid #ccc;"></div>
 
   <script>
     function myMap() {
@@ -206,7 +213,7 @@
     }
   </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXt1zIrCPVLZ1RX40YrC72yxLT49aDU_w&callback=myMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXt1zIrCPVLZ1RX40YrC72yxLT49aDU_w&callback=myMap"></script>-->
 
   <br />
   <br />

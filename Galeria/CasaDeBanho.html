@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="Imgs\logo_transparent.png" />
-  <title>Casa de Banho</title>
+  <title>Galeria- Casa de Banho</title>
 
   <style>
     body {
@@ -84,7 +84,7 @@
 
     /* Position the "next button" to the right */
     .next {
-      right: 0%;
+      right: 46.7%;
       border-radius: 3px 0 0 3px;
     }
 
@@ -128,14 +128,33 @@
 
     .caracteristicas {
       display: inline-block;
-      padding-left: 5%;
+      margin-left: 5%;
+      background-color: #EAEAEA;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 30px 0 rgba(0, 0, 0, 0.19);
+      width: 40%;
+
+    }
+
+    .titulocaracteristicas {
+      font-size: 3vh;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .desccaracteristicas {
+      text-align: left;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 1.8vh;
+      text-align: justify;
     }
 
     /*-------------- FOOTER --------------*/
 
     footer {
       font-size: 1.6vh;
-      display: inline-block;
+      position: absolute;
+      bottom: 0;
     }
   </style>
 
@@ -158,7 +177,7 @@
   <br />
   <br />
 
-<!-- IMAGESLIDER -->
+  <!-- IMAGESLIDER -->
 
   <!-- Container for the image gallery -->
   <div class="container">
@@ -180,7 +199,8 @@
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">4 / 4img src="Imgs\CasaDeBanho4.png" style="width:100%">
+      <div class="numbertext">4 / 4</div>
+      <img src="Imgs\CasaDeBanho4.png" style="width:100%">
     </div>
 
 
@@ -191,23 +211,48 @@
     <!-- Thumbnail images -->
     <div class="row" style="width: 150.1%;">
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho1.png" style="width:100%" onclick="currentSlide(1)" ">
+        <img class="demo cursor" src="Imgs\CasaDeBanho1.png" style="width:100%" onclick="currentSlide(1)">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho2.png" style="width:100%" onclick="currentSlide(2)" ">
+        <img class="demo cursor" src="Imgs\CasaDeBanho2.png" style="width:100%" onclick="currentSlide(2)">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho3.png" style="width:100%" onclick="currentSlide(3)" ">
+        <img class="demo cursor" src="Imgs\CasaDeBanho3.png" style="width:100%" onclick="currentSlide(3)">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Imgs\CasaDeBanho4.png" style="width:100%" onclick="currentSlide(4)" ">
+        <img class="demo cursor" src="Imgs\CasaDeBanho4.png" style="width:100%" onclick="currentSlide(4)">
       </div>
 
     </div>
   </div>
 
   <div class="caracteristicas">
-    aaaa
+    <p class="titulocaracteristicas">
+      CASA DE BANHO
+    </p>
+    <p class="desccaracteristicas">
+      As nossas casas de banho são modernas, com espaço suficiente de arrumação
+      para a sua higiéne.
+      <br />
+      Dependendendo do quarto escolhido oferecemos algumas regalias como casas
+      de banho equipadas com:
+      <br />
+      <br />
+      ● Jacuzzi
+      <br />
+      ● Sauna
+      <br />
+      ● Banho Turco
+      <br />
+      ● Máquina de lavar roupa
+      <br />
+      ● Banheira
+      <br />
+      ● Secador de cabelo
+      <br />
+      <br />
+
+    </p>
   </div>
 
 
